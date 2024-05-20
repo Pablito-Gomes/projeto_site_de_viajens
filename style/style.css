@@ -1,135 +1,355 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
 
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+
+    --cor1: white;
+    --cor2: rgb(61, 32, 32);
+    --cor3: rgb(109, 86, 62);
+
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background: rgb(77, 60, 97);
-    color: rgb(0, 0, 0);
-    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
     text-align: justify;
 }
 
-header{
-   text-align: center;
-   padding: 10px;
+/* Parte de Cabeçalho */
+
+header h1{
+    font-size: 4em;
+    text-shadow: 1px 1px 2px black;
 }
 
-
-
-header a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 10px 10px 3px 10px;
-    
-}
-
-header a:hover{  
-    /*border-bottom: 1.5px solid white;*/
-    color: rgb(35, 98, 187);
-    transition: 0.5s;
-    
-}
-
-nav{
-    text-align: right;
-}
-
-main{
+header ul{
+    list-style: none;
    
-
-    max-width: 1370px;
-    
-    margin:auto;
-    padding: 10px;
-
-    border-radius: 0px 0px 10px 10px;
+    display: flex;
 }
 
-main h1{
-    color: white;
-    margin: 5px;
-    text-indent: 10px;
+header nav{
+    display: flex;
+    justify-content: space-between;
+    margin: auto 30px;
 }
 
-main h2{
-    color: #2F1C6A;
+header nav p{
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+
+
+header{
+    height: calc(100vh - 150px);
+    background: url(../img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg) no-repeat center center;
+    background-size: cover;
+
+    color: var(--cor1);
+}
+
+.header-content{
+    max-width: 450px;
+    margin: 150px auto;
     text-align: center;
 }
 
-main .conteudo{
-   
-    background-color: rgb(255, 255, 255);
-    
-    margin: 5px;
-    padding: 10px;
-
-    max-width: 300px;
-
-    border-radius: 10px;
-    margin: auto;
-
-    color: rgb(163, 163, 163);
-
-    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.19);
+.header-content >p{
+    text-indent: 30px;
+    margin-bottom: 50px;
+    width: 100%;
 }
 
-main a{
+.header-content >a{
+    font-weight: bold;
     text-decoration: none;
-}
-
-#img01{
-
-   width: 100%;
-   border-radius: 10px;
-}
-
-main .h2{
-   
+    background-color: rgb(61, 32, 32);
+    color: white;
+    border-radius: 7px;
     
 
-    border-radius: 10px;
-    max-width: 200px;
-    
+    padding: 10px;
     margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.saiba-mais{
-
-    display: block;
-
-   padding: 10px;
-
-   margin-top: 10px;
     
-   text-align: center;
-
-   background-image: linear-gradient(to right, #301c6abd, rgba(127, 81, 159, 0.645));
-
-   border-radius: 7px;
-
-   font-weight: bold;
-
-   color: white;
-
-   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.473);
-
-   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.495);
 }
 
-.saiba-mais:hover{
-
-    margin-top: 7px;
-
-    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.473);
-
+.header-content >a:hover{
+    background-color: white;
+    color: rgb(61, 32, 32);
+    border: 2px solid rgb(61, 32, 32);
+    
     transition: 0.3s;
 }
 
+/* Parte de Cabeçalho */
+
+
+/* Parte de Pacotes */
+
+.pacotes{
+    background-color: lightgray;
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    
+
+    
+}
+
+
+.pacotes h1{
+    margin: 50px auto;
+    padding: 10px;
+    background-color: rgba(182, 182, 182, 0.378);
+    border-radius: 7px;
+    max-width: 400px;
+    
+}
+
+.pacotes .pacotes-cards{
+    display: flex;
+    margin: auto;
+    max-width: 950px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pacotes  .card{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+
+    height: 350px;
+    width: 250px;
+    
+    margin: 20px;
+
+    
+    position: relative;
+    
+
+    
+}
+
+
+
+.pacotes .card-image{
+    height: 200px;
+    width: 250px;
+    border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
+
+   
+}
+
+.pacotes  .card-content h2{
+
+    margin: 5px;
+    font-size: 1.3em;
+    
+}
+
+
+.pacotes  .card-content ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  
+}
+
+.pacotes  .card-content ul li{
+    
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: rgb(126, 124, 124);
+}
+
+.pacotes .card-content{
+    padding: 0px 10px;
+}
+
+.pacotes  .card-content ul li svg{
+    width: 20px;
+    height: 20px;
+    margin: 2.5px 15px 2.5px 0px;
+    color: rgb(126, 124, 124);
+
+}
+
+.pacotes .card-tag-top{
+    position: absolute;
+    background: burlywood;
+    padding: 5px 10px;
+    border-radius: 10px 0px 0px 10px ;
+
+    right: 0;
+    top: 20px;
+
+}
+
+.pacotes .card-tag{
+    margin: 0px;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: white;
+}
+
+.pacotes .card-tag-bottom{
+    position: absolute;
+    background: rgb(222, 148, 51);
+    border-radius: 0px 10px 10px 0px;
+    padding: 5px 10px;
+
+    top: 150px;
+}
+
+/* Parte de Pacotes */
+
+
+/* Parte de Serviços */
+
+
+.servicos{
+    text-align: center;
+
+}
+
+.servicos h1{
+    margin-top: 50px;
+    margin-bottom: 45px;
+}
+
+
+.servicos .flex{
+    display: flex;
+}
+
+
+.servicos .servicos-card{
+    display: flex;
+    margin: auto;
+    width: 950px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
+
+.servicos .card{
+    width: 300px;
+
+   
+    padding: 15px;
+    
+    margin: 30px 8px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    
+}
+
+
+.servicos .card svg{
+    width: 50px;
+    height: 50px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    transition: all 1s;
+
+}
+
+.servicos .card svg:hover{
+    stroke: var(--cor3);
+    transform: scale(1.1);
+}
+
+.servicos .card h3{
+    margin: 10px 0px;
+}
+
+.servicos .card p{
+    text-align: justify;
+    color: gray;
+}
+
+.servicos .card a{
+    background-color: var(--cor2);
+    text-decoration: none;
+    color: var(--cor1);
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 7px;
+
+    transition: all 1s;
+}
+
+.servicos .card a:hover{
+    background-color: white;
+    color: rgb(61, 32, 32);
+    border: 2px solid rgb(61, 32, 32);
+    
+   
+}
+
+.servicos .card .card-content{
+    height: 180px;
+    text-align: center;
+}
+
+
+/* Parte de Serviços */
+
+
+
+
+
+
+
+@media (max-width: 650px){
+
+    body{
+       margin-bottom: 55px;
+    }
+
+    header nav ul {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        padding: 0px;
+        height: 55px;
+        font-weight: bold;
+
+        z-index: 99;
+
+        color: white;
+        background-color: rgb(109, 86, 62);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+
+    header nav p{
+        margin: auto;
+        margin-top: 15px;
+    }
+}

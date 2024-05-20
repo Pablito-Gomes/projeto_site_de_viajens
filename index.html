@@ -13,6 +13,8 @@
 
     <title> DevCodeRain </title>
 
+    <script src="https://unpkg.com/feather-icons"></script>
+
     <link rel="stylesheet" href="style/style.css">
 
 
@@ -21,70 +23,204 @@
 
 <body>
 
-    <header>
+<header>
 
-        <h1> Chuva de códigos </h1>
+        <nav>
 
-        <p> Navegue por este site e descubra mais sobre códigos em HTML5 e CSS3 </p>
+            <p> Gomes Viagens </p>
 
-        <nav> 
+            <ul>
 
-        <a href="#"> HTML5 </a>
-        
+                <li> Home </li>
+                <li> Pacotes </li>
+                <li> Serviços </li>
+                <li> Contato </li>
 
-        <a href="#"> CSS3 </a>
-            
-        <a href="#"> Página Inicial </a>
-        
-        
+            </ul>
+
         </nav>
 
-        <div id="pixel-art"></div>
+        <div class="header-content">
+
+            <h1> Viage agora! </h1>
+
+            <p> Nós podemos traçar a rota do seu sonho </p>
+
+            <a href="#"> Saiba mais </a>
+            
+
+        </div>
+
+       
+
+        
 
     </header>
 
-    <main id="conteiner">
+   <main>
 
-        <section>
+    <section class="pacotes">
 
-            <h1> O que é HTML e CSS? </h1>
+        <h1> Nossos planos de viagens </h1>
 
-            <article class="conteudo">
+        <div class="pacotes-cards">
 
-                <div>
-
-                     <img src="img/Sem título.png" alt=""  id="img01"> 
-
+            <div class="card">
+    
+                <div class="card-tag-top">
+    
+                    <p class="card-tag"> Promoção </p>
+    
                 </div>
-
+    
+                <div class="card-tag-bottom">
+    
+                    <p class="card-tag"> R$ 1500,00 </p>
+    
+                </div>
+    
+                    <img src="https://images.unsplash.com/photo-1514214246283-d427a95c5d2f?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWlhbWl8ZW58MHx8MHx8fDA%3D" alt=""  class="card-image">
+    
+                <div class="card-content">
+    
+                    <h2> Pacote 5 noites hotel premium </h2>
+    
+                    <ul>
+    
+                        <li> <i data-feather="coffee">  </i> Café da manhã </li>
+                        <li> <i data-feather="wifi">  </i> Wifi </li>
+                        <li> <i data-feather="smile">  </i> Pet Friendly </li>
+    
+                    </ul>
+    
+                    <p>  </p>
+    
+                </div>
+    
+            </div>
+    
+            <div class="card">
+    
                 
-                    <h2 class="h2"> HTML </h2>
+    
+                <div class="card-tag-bottom">
+    
+                    <p class="card-tag"> R$ 4500,00 </p>
+    
+                </div>
+    
+                    <img src="https://images.unsplash.com/photo-1535764558463-30f3af596bee?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""  class="card-image">
+    
+                <div class="card-content">
+    
+                    <h2> Viagem para Disney </h2>
+    
+                    <ul>
+    
+                        <li> <i data-feather="home">  </i> Hospedagem </li>
+                        <li> <i data-feather="coffee">  </i> Café da manhã </li>
+                        <li> <i data-feather="wifi">  </i> Wifi </li>
+    
+                    </ul>
+    
+                    <p>  </p>
+    
+                </div>
+    
+            </div>
+    
+            <div class="card">
+    
+               
+    
+                <div class="card-tag-bottom">
+    
+                    <p class="card-tag"> R$ 5000,00 </p>
+    
+                </div>
+    
+                    <img src="https://images.unsplash.com/photo-1557409518-691ebcd96038?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHRva3lvfGVufDB8fDB8fHww" alt=""  class="card-image">
+    
+                <div class="card-content">
+    
+                    <h2> Pacote 3 dias em Tokyo </h2>
+    
+                    <ul>
+    
+                        <li> <i data-feather="home">  </i> hospdagem </li>
+                        <li> <i data-feather="wifi">  </i> Wifi </li>
+                        <li> <i data-feather="calendar">  </i> Cerejeiras </li>
+    
+                    </ul>
+    
+                    
+    
+                    </div>
+    
+                </div>
+        </div>
+
+        
+
+    </section>
+
+    <section class="servicos">
+
+        
+            
+                <h1 > Serviços </h1>
                 
+               
+            <div class="flex">
+                
+                      <div class="servicos-card">
+                
+                
+                    <div class="card">
+                        <i data-feather="map"></i>
+                        <div class="card-content">
+                            <h3> Tours guiados </h3>
+                
+                            <p> Os tours guiados são passeios que são realizados com auxílio de um guia, que além de dar informações sobre o local ele vai nos conduzir ao longo do trajeto </p>
+                        </div>
+                            <a href="#"> Saiba mais </a>
+                
+                    </div>
+                    <div class="card">
+                        <i data-feather="camera"></i>
+                        <div class="card-content">
+                
+                            <h3> Fotografia profissional </h3>
+                            <p> Nossos fotógrafos estão acostumados a registrar os melhores momentos das viagens para que você aproveite a paisagem sem se preocupar </p>
+                        </div>
+                            <a href="#"> Saiba mais </a>
+                
+                    </div>
+                    <div class="card">
+                        <i data-feather="navigation"></i>
+                        <div class="card-content">
+                
+                            <h3> Aluguel de veículos </h3>
+                            <p> Para os clientes que preferem explorar os ambientes sozinhos e curtem a liberdade, oferecemos o serviço de aluguel de veículos com preços super em conta </p>
+                        </div>
+                            <a href="#"> Saiba mais </a>
+                
+                    </div>
+            </div>
 
-                <p> A Linguagem de Marcação de Hipertexto (HTML) é uma linguagem de computador que compõe a maior parte das páginas da internet e dos aplicativos online. Um hipertexto é um texto usado para fazer referência a outros textos, enquanto uma linguagem de marcação é composta por uma série de marcações que dizem para os servidores da web qual é o estilo e a estrutura de um documento. </p>
-
-                <a href="https://www.hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos"  class="saiba-mais" target="_blank"> Saiba mais </a>
-
-            </article>
-
-            <article class="conteudo">
-
-                <h2 class="h2"> CSS </h2>
-
-                <p > CSS é chamado de linguagem Cascading Style Sheet e é usado para estilizar elementos escritos em uma linguagem de marcação como HTML. O CSS separa o conteúdo da representação visual do site. Pense  na decoração da sua página. Utilizando o CSS é possível alterar a cor do texto e do fundo, fonte e espaçamento entre parágrafos. Também pode criar tabelas, usar variações de layouts, ajustar imagens para suas respectivas telas e assim por diante. </p>
-
-                <a href="https://www.hostinger.com.br/tutoriais/o-que-e-css-guia-basico-de-css#:~:text=CSS%20%C3%A9%20chamado%20de%20linguagem,da%20representa%C3%A7%C3%A3o%20visual%20do%20site." class="saiba-mais" target="_blank"> Saiba mais </a>
-
-            </article>
-
-        </section>
+      </div>
 
 
-    </main>
+    </section>
 
-    <footer>
 
-    </footer>
+
+
+   </main>
+
+   <script>
+    feather.replace();
+  </script>
     
 </body>
 

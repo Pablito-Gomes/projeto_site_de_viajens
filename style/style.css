@@ -364,7 +364,7 @@ header{
         color: white;
         background-color: rgb(109, 86, 62);
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         
     }

@@ -340,8 +340,37 @@ header{
 
 
 
+/* Parte de Contatos */
+
+.contatos{
+    
+    background-color: lightgray;
+    position: relative;
+    padding: 60px 20%;
+    
+}
+
+.contatos .map{
+
+   
+    margin: auto;
+
+    
+}
+
+.contatos-card{
+    background-color: white;
+    position: absolute;
+    width: 350px;
+    height: 300px;
+    top: 59px;
+
+    border-radius: 0px 0px 20px;
+}
 
 
+
+/* Parte de Contatos */
 
 
 @media (max-width: 650px){

@@ -153,12 +153,8 @@ header{
     width: 250px;
     
     margin: 20px;
-
     
     position: relative;
-    
-
-    
 }
 
 
@@ -242,7 +238,6 @@ header{
 
 .servicos{
     text-align: center;
-
 }
 
 .servicos h1{
@@ -274,6 +269,7 @@ header{
    
     padding: 15px;
     
+    background-color: rgba(211, 211, 211, 0.449);
     margin: 30px 8px;
     display:flex;
     flex-direction: column;
